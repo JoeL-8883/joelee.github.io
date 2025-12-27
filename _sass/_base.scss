@@ -248,9 +248,15 @@ ul.task-list input[type="checkbox"] {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  //border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+}
+
+.navbar a {
+  &:hover{
+    font-weight: bolder;
+  }
 }
 
 .navbar .dropdown-menu,
@@ -306,13 +312,15 @@ ul.task-list input[type="checkbox"] {
 
     &:hover {
       color: var(--global-hover-color);
+      font-weight: bolder;
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
-    color: var(--global-theme-color);
+    font-weight: bold;
+    // color: var(--global-theme-color);
+    color: var(--black-color);
 
     &:hover {
       color: var(--global-hover-color);
@@ -626,7 +634,7 @@ footer.sticky-bottom {
       text-decoration: none;
 
       &:hover {
-        color: var(--global-theme-color);
+        font-weight: bolder;
       }
     }
 
@@ -643,7 +651,7 @@ footer.sticky-bottom {
       padding: 0.75rem 1.15rem;
 
       &:hover {
-        color: $black-color;
+        //color: $black-color;
       }
     }
 
